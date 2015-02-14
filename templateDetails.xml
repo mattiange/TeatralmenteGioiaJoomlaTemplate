@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+    <name>Teatralmente Gioia</name>
+    <creationDate>February 2015</creationDate>
+    <author>Mattia Leonardo Angelillo</author>
+    <authorEmail>mattia.angelillo@gmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <copyright></copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>5.0.0</version>
+    <description><![CDATA[
+      <b>Teatralmente Gioia</b><br />
+      Realizzato da Mattia Leonardo Angelillo per la compagnia teatrale amatoriale Teatralmente Gioia.
+      ]]></description>
+
+    <files>
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>fonts</folder>
+        <folder>js</folder>
+        <filename>index.html</filename>
+        <filename>index.php</filename>
+        <filename>index1.php</filename>
+        <filename>index2.php</filename>
+        <filename>mobile.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_preview.png</filename>
+        <filename>template_thumbnail.png</filename>
+        <filename>favicon.ico</filename>
+        <filename>changelog.txt</filename>
+        <filename>params.ini</filename>
+    </files>
+
+    <positions>
+        <position>debug</position>
+        <position>language</position>
+        <position>mainmenu</position>
+        <position>cerca</position>
+        <position>position-1-mobile</position>
+        <position>sidebar</position>
+        <position>banner</position>
+        <position>footer</position>
+        <position>content</position>
+        <position>dati</position>
+        <position>position-9</position>
+        <position>fbcomments</position>
+    </positions>
+    
+    <languages folder="language">
+        <language tag="it-IT">it-IT/it-IT.tpl_tg.ini</language>
+    </languages>
+    
+    <administration>
+        <languages folder="admin">
+            <language tag="it-IT">it-IT.tpl_tg.ini</language>
+        </languages>
+    </administration>
+        
+	<config>
+            <fields name="params">
+                <fieldset name="sidebar" label="SIDEBAR">
+                    <field name="visible" type="list" default="center"
+                            label="SHOW_SIDEBAR"
+                            description=""
+                    >
+                            <option value="yes">YES</option>
+                            <option value="no">NO</option>
+                    </field>
+                </fieldset>
+                
+                <fieldset name="comments" label="COMMENTS">
+                    <field name="fbcomments" type="list" default="center"
+                            label="SHOW_SIDEBAR"
+                            description=""
+                    >
+                            <option value="yes">YES</option>
+                            <option value="no">NO</option>
+                    </field>
+                    
+                    <field name="fbcomments" type="list" default="center"
+                            label="FB_COMMENTS"
+                            description=""
+                    >
+                            <option value="yes">YES</option>
+                            <option value="no">NO</option>
+                    </field>
+                    
+                    <field name="gpcomments" type="list" default="center"
+                            label="GP_COMMENTS"
+                            description=""
+                    >
+                            <option value="yes">YES</option>
+                            <option value="no">NO</option>
+                    </field>
+                    
+                    <field name="twcomments" type="list" default="center"
+                            label="TW_COMMENTS"
+                            description=""
+                    >
+                            <option value="yes">YES</option>
+                            <option value="no">NO</option>
+                    </field>
+                </fieldset>
+                
+                <fieldset name="fb" label="FB">
+                    <field name="fblikebox" label="FB_LIKE_BOX" type="list">
+                        <option value="yes">YES</option>
+                        <option value="no">NO</option>
+                    </field>
+                    
+                    <field name="fblikebox_href" label="FB_LIKE_BOX_HREF"></field>
+                    <field name="fblikebox_width" value="300" label="FB_LIKE_BOX_WIDTH"></field>
+                    <field name="fblikebox_height" value="600" label="FB_LIKE_BOX_HEIGHT"></field>
+                    <field name="fblikebox_colorscheme" label="FB_LIKE_BOX_COLORSCHEME" type="list">
+                        <option value="dark">Dark</option>
+                        <option value="tg">Teatralmente Gioia</option>
+                    </field>
+                    <field name="fblikebox_show_faces" label="FB_LIKE_BOX_SHOW-FACES" type="list">
+                        <option value="true">TRUE</option>
+                        <option value="false">FALSE</option>
+                    </field>
+                    <field name="fblikebox_border_color" value="#ffff00" label="FB_LIKE_BOX_BORDER_COLOR" description="Il colore dei bordi va espresso nella forma esadecimale: #rrggbb oppure #RRGGBB"></field>
+                    <field name="fblikebox_stream" label="FB_LIKE_BOX_STREAM" type="list">
+                        <option value="true">TRUE</option>
+                        <option value="false">FALSE</option>
+                    </field>
+                    <field name="fblikebox_header" label="FB_LIKE_BOX_HEADER" type="list">
+                        <option value="true">TRUE</option>
+                        <option value="false">FALSE</option>
+                    </field>
+                </fieldset>
+                
+                <fieldset name="colors" label="COLORS_THEME">
+                    <field name="app_theme" label="APP_THEME" type="list">
+                        <option value="dark">Dark</option>
+                        <option value="tg">Teatralmente Gioia</option>
+                    </field>
+                </fieldset>
+                
+                <fieldset name="dimensions" label="LABEL_DIMENSION_THEME">
+                    <field name="dimension_theme" label="THEME_DIMENSION" type="list">
+                        <option value="auto">Auto</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="larger">Larger</option>
+                    </field>
+                </fieldset>
+            </fields>
+	</config>
+</extension>

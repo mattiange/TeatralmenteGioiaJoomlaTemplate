@@ -1,0 +1,9 @@
+#page{
+    width: 800px;
+}
+#page > .body{
+    width: 780px;
+}
+#page #right{
+   display: none;
+}

@@ -1,0 +1,9 @@
+#page{
+    width: 1500px;
+}
+#page > .body{
+    width: 1150px;
+}
+#page #right{
+   width: 330px;
+}

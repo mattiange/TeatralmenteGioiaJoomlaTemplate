@@ -1,0 +1,13 @@
+4.2.0
+  Aggiunta modulo lingua
+4.1.1
+  Correzione di bug
+4.0.0
+  Nuovo template
+3.0.0
+  Creato template di Joomla!
+2.0.0
+  Nuovo template con HTML4 e PHP 5
+1.0.0
+  Creazione del sito.
+  Gestione con xHTML2 e PHP 4

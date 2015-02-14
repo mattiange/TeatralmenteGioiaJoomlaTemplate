@@ -1,0 +1,96 @@
+/**************
+* BACKGROUND
+**************/
+#header,
+.list{
+    background: #080808;
+}
+.menu.toggle div{
+    background: white;
+}
+.sidebar > ul > li {
+    background: #7d7e7d; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdkN2U3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZTBlMGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-8 */
+}
+.sidebar > ul > li:hover {
+    background: #180f0f;
+    background: -moz-linear-gradient(#180f0f 0%, #0e0e0e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #180f0f), color-stop(100%, #0e0e0e));
+    background: -webkit-linear-gradient(#180f0f 0%, #0e0e0e 100%);
+    background: linear-gradient(#180f0f 0%, #0e0e0e 100%);
+}
+
+/*******************
+ * COLORS
+********************/
+#header,
+#header .mainmenu a{
+    color: #f7f7f7;
+}
+.sidebar > ul > li > a {
+    color: #ffffff;
+}
+
+/************************
+ * BOX-SHADOWS
+************************/
+.bar,
+#page .body{
+    box-shadow: 0px 0px 10px 1px #245269;
+}
+
+/********************
+ * TEXT-SHADOW
+********************/
+.sidebar ul li a{
+    text-shadow: 0 -1px 1px #751d0c;
+}
+
+
+/*****************************
+ * JOOMLA
+*****************************/
+.readmore{
+    -moz-box-shadow: 3px 3px 0px 0px #080808,
+                0px 0px 10px 0px #080808 inset;
+    -o-box-shadow: 3px 3px 0px 0px #080808,
+                0px 0px 10px 0px #080808 inset;
+    -webkit-box-shadow: 3px 3px 0px 0px #080808,
+                0px 0px 10px 0px #080808 inset;
+    box-shadow: 3px 3px 0px 0px #080808,
+                0px 0px 10px 0px #080808 inset;
+}
+.readmore:hover{
+    -moz-box-shadow: 3px 3px 0px 0px #080808;
+    -o-box-shadow: 3px 3px 0px 0px #080808;
+    -webkit-box-shadow: 3px 3px 0px 0px #080808;
+    box-shadow: 3px 3px 0px 0px #080808;
+}
+h1, h2, h3, h4, h5, h6{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+h1 a, 
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a{
+    color: #036;
+}
+h1 a:hover, 
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover{
+    color: #3a92c8;
+}

@@ -1,0 +1,315 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin);
+@charset "UTF-8";
+
+
+html, *{
+    padding:0;
+    margin:0;
+    font-family: Ubuntu, sans-serif;
+}
+body{
+    /*background: rgba(241,218,54,0.4); /* Old browsers */
+    /*background: #555;*/
+    background: #ddd;
+}
+
+
+
+.right{
+    float: right;
+}
+
+#header{
+    border: 0px solid;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    -moz-box-shadow: 0px 5px 10px #101010,
+                0px 0px 220px #101010;
+    -webkit-box-shadow: 0px 5px 10px #101010,
+                0px 0px 220px #101010;
+    -o-box-shadow: 0px 5px 10px #101010,
+                0px 0px 220px #101010;
+    box-shadow: 0px 5px 10px #101010,
+                0px 0px 220px #101010;
+}
+#header h1,
+#header h2,
+#header h3,
+#header h4,
+#header h5,
+#header h6{
+    margin: 0;
+}
+#header .sitename{
+    float: left;
+    margin: 4px;
+    margin-left: 20px;
+}
+.sitename a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#page{
+    border: 0px solid;
+    margin: 0 auto;
+    margin-top: 70px;
+    overflow: hidden;
+}
+#page > .body{
+    background: white;
+    float: left;
+    border: 0px solid;
+    margin: 10px;
+    
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+#page > .body .content{
+    padding: 10px;
+}
+
+
+/**********************
+* BAR
+**********************/
+.bar{
+    border: 1px solid;
+    margin: 10px;
+    padding: 15px;
+    color: black;
+    border-color: wheat;
+    overflow: hidden;
+    
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+}
+.bar .date{
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+.bar .search{
+    float: right;
+}
+.bar .search label{
+    display: none;
+}
+.bar .search input{
+    width: 350px;
+    height: 30px;
+}
+
+
+
+
+/******************
+ * SOCIAL
+******************/
+#social,
+#comments{
+  border: 0px solid;
+  
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+  #social .titles,
+  #comments .titles{
+    border: 0px solid;
+    overflow: hidden;
+  }
+    #social > .titles > div.this,
+    #comments > .titles > div.this{background-color: #fff;}
+    #social .titles > div,
+    #comments .titles > div{
+      width: 25px;
+      height: 25px;
+      float: left;
+      margin-left: 5px;
+      padding: 6px;
+      
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+    }
+    #social .titles > div:first-child,
+    #comments .titles > div:first-child{margin-left: 0px;}
+    #social .titles .fb,
+    #comments .titles .fb{
+      border: 1px solid #036;
+      background: url(../images/fb.png) #003366;
+      background-size: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+      
+      float: left;
+    }
+    #social .titles .tw{
+      border: 1px solid #036;
+      background: url(../images/fb.png) #003366;
+      background-size: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    #social .titles .gp{
+      border: 1px solid #633;
+      
+      background: url(../images/gp.png) #663333;
+      background-size: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    #social .titles .tw{
+      border: 1px solid #036;
+      background: url(../images/twitter.png) #3a92c8;
+      background-size: 35px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    #social .titles .tg{
+      border: 1px solid #036;
+      
+      background: #f9c667;
+      background-image: url(../images/tg.png);
+      background-size: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  #social   > .body{
+    border: 1px solid;
+    margin-top: 5px;
+    width: 100%;
+  }
+    #social > .body > div{
+      background: white;
+      padding: 10px;
+      display: none;
+    }
+    #social > .body > .fb{
+      box-shadow: 0px 0px 20px #036 inset;
+      -webkit-box-shadow: 0px 0px 20px #036 inset;
+      -moz-box-shadow: 0px 0px 20px #036 inset;
+      -o-box-shadow: 0px 0px 20px #036 inset;
+      
+      display: block;
+    }
+    #social > .body > .gp{
+      box-shadow: 0px 0px 20px #633 inset;
+      -webkit-box-shadow: 0px 0px 20px #633 inset;
+      -moz-box-shadow: 0px 0px 20px #633 inset;
+      -o-box-shadow: 0px 0px 20px #633 inset;
+    }
+    #social > .body > .tw{
+      box-shadow: 0px 0px 20px #3a92c8 inset;
+      -webkit-box-shadow: 0px 0px 20px #3a92c8 inset;
+      -moz-box-shadow: 0px 0px 20px #3a92c8 inset;
+      -o-box-shadow: 0px 0px 20px #3a92c8 inset;
+    }
+    #social > .body > .tg{
+      box-shadow: 0px 0px 5px #ff0 inset,
+                  0px 0px 20px orange inset;
+      -webkit-box-shadow: 0px 0px 5px #ff0 inset,
+                  0px 0px 20px orange inset;
+      -moz-box-shadow: 0px 0px 5px #ff0 inset,
+                  0px 0px 20px orange inset;
+      o-box-shadow: 0px 0px 5px #ff0 inset,
+                  0px 0px 20px orange inset;
+    }
+
+
+
+/*********************
+ * JOOMLA
+*********************/
+.readmore{
+    border: 1px solid;
+    float: left;
+    clear: both;
+    margin: 6px;
+    
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+.readmore a{
+    display: block;
+    padding: 7px;
+    color: #000;
+    text-decoration: none;
+}
+.items-row .item{
+    overflow: hidden;
+}
+.actions{
+    list-style: none;
+    overflow: hidden;
+}
+.actions li{
+    float: left;
+    margin-left: 10px;
+}
+dl.article-info{
+    font-size: 12px;
+    padding: 15px;
+}
+.pagenav{
+    margin-top: 10px;
+    list-style: none;
+    overflow: hidden;
+}
+.pagenav li{
+    float: left;
+}
+.pagenav li:last-child{
+    margin-left: 10px;
+}
+ul{
+    margin-left: 40px;
+}
+ul ul{
+    margin-left: 40px;
+}
+.search #searchForm fieldset{
+    padding: 10px;
+}
+.search #searchForm label{
+    margin-right: 10px;
+    line-height: 25px;
+}
+.search #searchForm input{
+    width: 400px;
+    height: 25px;
+}
+.search #searchForm input[type='radio'],
+.search #searchForm input[type='checkbox']{
+    width: 20px;
+}
+.search #searchForm input[type='radio'],
+.search #searchForm input[type='checkbox'],
+.search #searchForm label{
+    display: block;
+    float: left;
+}
+.search #searchForm .ordering-box{
+    overflow: hidden;
+    clear: both;
+    margin-top: 50px;
+}
+.search #searchForm input[type='radio']+label,
+.search #searchForm input[type='checkbox']+label{
+    line-height: 25px;
+    font-size: 15px;
+}
+.search-results dd{
+    font-size: small;
+}
